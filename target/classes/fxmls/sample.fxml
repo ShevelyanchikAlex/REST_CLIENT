@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F1948A#F1948A;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+      <HBox prefHeight="50.0" prefWidth="600.0">
+         <children>
+              <Button fx:id="getBtn" mnemonicParsing="false" onAction="#get" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #A9DFBF#A9DFBF;" text="Open">
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" />
+               </HBox.margin></Button>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #A9DFBF#A9DFBF;" text="Back">
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="putBtn" mnemonicParsing="false" onAction="#put" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #A9DFBF#A9DFBF;" text="Put">
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" />
+               </HBox.margin></Button>
+              <Button fx:id="postBtn" mnemonicParsing="false" onAction="#post" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #A9DFBF#A9DFBF;" text="Post">
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" />
+               </HBox.margin></Button>
+            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #A9DFBF#A9DFBF;" text="Delete">
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" />
+               </HBox.margin></Button>
+            <Button fx:id="moveBtn" mnemonicParsing="false" onAction="#move" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #A9DFBF#A9DFBF;" text="Move">
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" />
+               </HBox.margin></Button>
+            <Button fx:id="copyBtn" mnemonicParsing="false" onAction="#copy" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #A9DFBF#A9DFBF;" text="Copy">
+               <HBox.margin>
+                  <Insets left="3.0" right="3.0" />
+               </HBox.margin></Button>
+         </children>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutY="48.0" prefHeight="344.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="listView" prefHeight="350.0" prefWidth="395.0" style="-fx-background-color: #EDC8B7#EDC8B7;" />
+            <VBox prefHeight="400.0" prefWidth="205.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Path to moved/copied file">
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="filePathTextField" prefHeight="30.0" prefWidth="205.0" promptText="filePath">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
